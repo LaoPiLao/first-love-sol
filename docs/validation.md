@@ -1,5 +1,7 @@
 # Validation notes
 
+The cache and compaction measurements below were collected on Windows with Codex Desktop / `codex-cli 0.150.0-alpha.8`. They are historical observations, not guarantees for later Codex versions.
+
 ## Extraction integrity
 
 The extractor downloads one pinned `models.json`, checks its SHA-256, selects exactly one `gpt-5.6-sol` record, verifies that `model_messages.instructions_template` and `base_instructions` are identical, and then checks the extracted byte sequence before writing it.
