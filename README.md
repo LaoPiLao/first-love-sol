@@ -30,6 +30,22 @@ At the pinned commit, the two instruction fields are byte-for-byte identical. Se
 
 ## Install
 
+For a one-command, backup-first installation on Windows, completely exit Codex Desktop and run:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\install-first-love-sol.ps1
+```
+
+The installer verifies the bundled prompt, backs up an existing `config.toml` before changing it, writes only the top-level `model_instructions_file`, and reports every backup path. It refuses to edit while Codex Desktop is running.
+
+To remove the managed setting and verified prompt later:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\install-first-love-sol.ps1 -Uninstall
+```
+
+### Manual installation
+
 Extract a verified copy directly from the pinned upstream source:
 
 ```powershell

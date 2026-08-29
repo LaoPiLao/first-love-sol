@@ -30,6 +30,22 @@
 
 ## 安装
 
+完全退出 Codex Desktop 后，在 Windows 上运行一条命令即可完成带备份的部署：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\install-first-love-sol.ps1
+```
+
+安装器会校验内置 prompt、修改前备份已有的 `config.toml`、只写入顶层 `model_instructions_file`，并显示所有备份路径。Codex Desktop 仍在运行时，脚本会拒绝修改。
+
+以后如需移除该配置和未经修改的 prompt：
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\install-first-love-sol.ps1 -Uninstall
+```
+
+### 手动安装
+
 直接从固定的上游来源提取并校验：
 
 ```powershell
