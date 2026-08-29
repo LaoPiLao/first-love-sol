@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.toml text eol=lf
+*.ps1 text eol=lf
+LICENSE text eol=lf
+
+# Preserve the upstream-derived prompt byte-for-byte, including its lack of a
+# trailing newline, so the documented SHA-256 remains stable across checkouts.
+prompts/sol-day1-2026-07-09.md -text

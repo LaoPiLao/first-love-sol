@@ -1,0 +1,29 @@
+# Codex secrets and local state
+config.toml
+auth.json
+*.db
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.jsonl
+*.log
+*.bak*
+.env
+.env.*
+!.env.example
+
+# Credentials and exported account data
+oauth/
+credentials/
+secrets/
+exports/
+screenshots/
+
+# Generated validation output
+artifacts/
+
+# Editors / OS
+.idea/
+.vscode/
+Thumbs.db
+Desktop.ini

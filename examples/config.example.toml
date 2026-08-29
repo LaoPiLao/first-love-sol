@@ -1,0 +1,5 @@
+# Merge this top-level key into your existing Codex config.toml.
+# Place it before any [table] header. Do not replace the rest of your config.
+# Windows: forward slashes avoid TOML backslash escaping mistakes.
+
+model_instructions_file = "C:/Users/<you>/.codex/sol-day1-2026-07-09.md"
